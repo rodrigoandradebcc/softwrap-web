@@ -56,5 +56,6 @@ $ yarn start
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
+![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print2.png)
 
 Feito com ❤️ por Rodrigo Andrade 👋🏽 Entre em contato!
