@@ -40,7 +40,7 @@ $ yarn
 # Execute a aplicação em modo de desenvolvimento
 $ yarn dev:server
 
-# O servidor inciará na porta:3333 - acesse http://localhost:3333 
+# O servidor inciará na porta:3333 - acesse http://localhost:3333
 🧭 Rodando a aplicação web (Front End)
 # Clone este repositório
 $ git clone https://github.com/odrigoandradebcc/softwrap-web
@@ -55,5 +55,6 @@ $ yarn
 $ yarn start
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
 
 Feito com ❤️ por Rodrigo Andrade 👋🏽 Entre em contato!
