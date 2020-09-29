@@ -58,4 +58,9 @@ $ yarn start
 
 ![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print2.png)
 
+![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print3.png)
+
+![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print4.png)
+
+
 Feito com ❤️ por Rodrigo Andrade 👋🏽 Entre em contato!
