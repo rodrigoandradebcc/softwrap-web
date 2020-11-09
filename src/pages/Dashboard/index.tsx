@@ -3,6 +3,7 @@ import { FiTrash2, FiEdit } from 'react-icons/fi';
 import { useHistory } from 'react-router-dom';
 import api from '../../services/api';
 import { Container, Button } from './styles';
+import { ModalConfirmation } from '../../components/ModalConfirmation';
 import Header from '../../components/Header';
 
 interface IDataForm {
@@ -18,6 +19,9 @@ interface IDataForm {
 const Dashboard: React.FC = () => {
   const history = useHistory();
   const [allUsers, setAllUsers] = useState<IDataForm[]>();
+  const [isModalConfirmation, setModalConfirmation] = useState(false);
+  const [idUserToDelete, setIdUserToDelete] = useState<string>('');
+
   useEffect(() => {
     const LoadData = async () => {
       const response = await api.get('/users');
@@ -29,6 +33,8 @@ const Dashboard: React.FC = () => {
   const deleteUser = async (id: string) => {
     await api.delete(`/users/${id}`);
     setAllUsers(allUsers?.filter(user => user.id !== id));
+    console.log('deletado');
+    setModalConfirmation(false);
   };
 
   const goToForm = (user: IDataForm) => {
@@ -41,8 +47,27 @@ const Dashboard: React.FC = () => {
     console.log(user);
   };
 
+  function closeModalConfirmation() {
+    setModalConfirmation(false);
+  }
+
+  function getId(id: string) {
+    console.log('modal');
+    setIdUserToDelete(id);
+    setModalConfirmation(true);
+  }
+
   return (
     <>
+      {isModalConfirmation && (
+        <ModalConfirmation
+          title="Excluir usuário"
+          visible={isModalConfirmation}
+          closeModal={closeModalConfirmation}
+          confirm={() => deleteUser(idUserToDelete)}
+          textConfirm="Deseja confirmar a exclusão desse usuário?"
+        />
+      )}
       <Header />
       <Container>
         <h1>Listagem de Usuários</h1>
@@ -61,7 +86,7 @@ const Dashboard: React.FC = () => {
                 <Button type="submit" onClick={() => goToForm(user)}>
                   <FiEdit size={20} />
                 </Button>
-                <Button type="submit" onClick={() => deleteUser(user.id)}>
+                <Button type="submit" onClick={() => getId(user.id)}>
                   <FiTrash2 size={20} />
                 </Button>
               </div>
