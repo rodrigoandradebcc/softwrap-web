@@ -2,11 +2,25 @@ import styled, { css, keyframes } from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.header`
-  width: 100%;
-  height: 60px;
-  background-color: #232129;
-  display: flex;
-  place-content: center;
+  width: 64px;
+  min-height: 100vh;
+  background-color: #373B53;
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    svg {
+      margin-top: 32px;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  position: absolute;
+  top: 0;
+  bottom: 0;
 `;
 
 interface IContentPros {
@@ -23,7 +37,7 @@ const apperToRight = keyframes`
   }
 `;
 
-export const Content = styled.div<IContentPros>`
+/*export const Content = styled.div<IContentPros>`
   max-width: 1120px;
   width: 90%;
   display: flex;
@@ -78,4 +92,4 @@ export const Content = styled.div<IContentPros>`
       display: none;
     }
   }
-`;
+`;*/

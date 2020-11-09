@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 
-import Header from '../../components/Header';
+import SideBar from '../../components/SideBar';
 
 interface IDataForm {
   id: string;
@@ -21,7 +21,7 @@ const ShowUser: React.FC<IEditFormProps> = ({ location }) => {
   const { user } = location.state;
   return (
     <>
-      <Header />
+      <SideBar />
       <Container>
         <div>
           <p>

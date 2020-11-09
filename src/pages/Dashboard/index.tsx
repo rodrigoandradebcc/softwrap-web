@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { FiTrash2, FiEdit } from 'react-icons/fi';
 import { useHistory } from 'react-router-dom';
 import api from '../../services/api';
-import { Container, Button } from './styles';
-import Header from '../../components/Header';
+import { Container, Content } from './styles';
+import SideBar from '../../components/SideBar';
+import Button from '../../components/Button';
 
 interface IDataForm {
   id: string;
@@ -43,8 +44,10 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <Header />
+      <SideBar />
       <Container>
+        <Content>
+
         <h1>Listagem de Usuários</h1>
         <ul>
           {allUsers?.map(user => (
@@ -68,6 +71,7 @@ const Dashboard: React.FC = () => {
             </li>
           ))}
         </ul>
+        </Content>
       </Container>
     </>
   );
