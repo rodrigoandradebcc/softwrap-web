@@ -18,16 +18,16 @@ export const Content = styled.div`
     font-weight: 600;
     text-align: center;
   }
-  width: 80%;
+  width: 60%;
   height: 50%;
   background: white;
   margin-left: 64px;
   display: flex;
   align-self: center;
   justify-content: center;
-  
+
   form {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-content: center;

@@ -21,13 +21,11 @@ export default createGlobalStyle`
   }
 
   li {
-    background: #ffffff;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin: 8px 0;
     padding: 15px;
     display: grid;
-    grid-template-columns: 3fr 3fr 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
   }
 
   li > span:last-child {

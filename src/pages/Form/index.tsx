@@ -34,7 +34,7 @@ const Form: React.FC = () => {
     void
   > => {
     try {
-      const { data: responseData } = await api.post('users', data);
+      const { data: responseData } = await api.post('/users', data);
       history.push('/dashboard');
       console.log(responseData);
     } catch (error) {
