@@ -53,7 +53,7 @@ const EditForm: React.FC<IEditFormProps> = ({ location }) => {
       <Container>
         <Content>
           <FormElement initialData={user} ref={formRef} onSubmit={updateUser}>
-            <h2> Editar </h2>
+            <h2> Editar Usuário </h2>
 
             <Input icon={FiUser} name="name" placeholder="Nome Completo" />
 

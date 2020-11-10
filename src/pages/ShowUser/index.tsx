@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, Content } from './styles';
 
 import SideBar from '../../components/SideBar';
 
@@ -23,26 +23,29 @@ const ShowUser: React.FC<IEditFormProps> = ({ location }) => {
     <>
       <SideBar />
       <Container>
-        <div>
-          <p>
-            <h1>{user.name}</h1>
-            <br />
-            E-mail:
-            {user.email}
-            <br />
-            Estado Civil:
-            {user.maritalStatus}
-            <br />
-            CPF:
-            {user.cpf}
-            <br />
-            Cidade:
-            {user.city}
-            <br />
-            Estado:
-            {user.city}
-          </p>
-        </div>
+        <Content>
+            <h2>{user.name}</h2>
+            <div>
+              <strong>E-mail</strong>
+              <span>{user.email}</span>
+            </div>
+            <div>
+              <strong>Estado civil</strong>
+              <span>{user.maritalStatus}</span>
+            </div>
+            <div>
+              <strong>CPF</strong>
+              <span>{user.cpf}</span>
+            </div>
+            <div>
+              <strong>Cidade</strong>
+              <span>{user.city}</span>
+            </div>
+            <div>
+              <strong>Estado</strong>
+              <span>{user.state}</span>
+            </div>
+        </Content>
       </Container>
     </>
   );
