@@ -2,50 +2,41 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.div`
-  height: calc(100vh - 60px);
   display: flex;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1120px;
+  justify-content: center;
+  min-height: 100vh;
 `;
 
 export const Content = styled.div`
-  width: 100%;
+ padding: 32px;
+  h2 {
+    color: #6F52ED;
+    margin-bottom: 16px;  
+    font-weight: 600;
+    text-align: center;
+  }
+  width: 60%;
+  height: 50%;
+  background: white;
+  margin-left: 64px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 
   form {
-    text-align: center;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  h2 {
-    margin-bottom: 24px;
-  }
-
-  a {
-    &:hover {
-      color: ${shade(0.2, '#ff9000')};
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    button {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 32px;
     }
+    padding: 16px;
   }
-
-  button {
-    background: #ff9000;
-    height: 56px;
-    text-align: center;
-    width: 50%;
-
-    border-radius: 10px;
-    border: 0;
-    padding: 0 16px;
-    color: #312e38;
-    font-weight: 500;
-    margin-top: 16px;
-    transition: background-color 0.2s;
-
-    &:hover {
-      background: ${shade(0.2, '#ff9000')};
-    }
-  }
+  border-radius: 8px;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.1);
 `;

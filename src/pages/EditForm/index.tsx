@@ -15,7 +15,7 @@ import api from '../../services/api';
 import { Container, Content } from './styles';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
-import Header from '../../components/Header';
+import SideBar from '../../components/SideBar';
 
 interface IDataForm {
   id: string;
@@ -49,11 +49,11 @@ const EditForm: React.FC<IEditFormProps> = ({ location }) => {
 
   return (
     <>
-      <Header />
+      <SideBar />
       <Container>
         <Content>
           <FormElement initialData={user} ref={formRef} onSubmit={updateUser}>
-            <h2> Editar </h2>
+            <h2> Editar Usuário </h2>
 
             <Input icon={FiUser} name="name" placeholder="Nome Completo" />
 

@@ -4,30 +4,27 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  background: #232129;
-  border: 2px solid #232129;
-  padding: 16px;
-  border-radius: 10px;
+  background: #FFF;
   padding: 16px;
 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   svg {
     margin-right: 10px;
-    color: #666;
+    color: #6F52ED;
   }
 
   & + div {
-    margin-top: 8px;
+    margin-top: 16px;
   }
 
   input {
-    color: #f4ede8;
+    color: #373B53;
 
-    flex: 1;
     background: transparent;
     border: 0;
 
     &::placeholder {
-      color: #666360;
+      color: #A6ACBE;
     }
   }
 `;

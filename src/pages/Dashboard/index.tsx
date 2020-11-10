@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { FiTrash2, FiEdit } from 'react-icons/fi';
+import { FiTrash2, FiEdit, FiEye } from 'react-icons/fi';
 import { useHistory } from 'react-router-dom';
 import api from '../../services/api';
-import { Container, Button } from './styles';
 import { ModalConfirmation } from '../../components/ModalConfirmation';
-import Header from '../../components/Header';
+import { Container, Content, User } from './styles';
+import SideBar from '../../components/SideBar';
+import Button from '../../components/Button';
 
 interface IDataForm {
   id: string;
@@ -59,7 +60,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      {isModalConfirmation && (
+     {isModalConfirmation && (
         <ModalConfirmation
           title="Excluir usuário"
           visible={isModalConfirmation}
@@ -68,31 +69,35 @@ const Dashboard: React.FC = () => {
           textConfirm="Deseja confirmar a exclusão desse usuário?"
         />
       )}
-      <Header />
+      <SideBar />
       <Container>
-        <h1>Listagem de Usuários</h1>
-        <ul>
-          {allUsers?.map(user => (
-            <li key={user.cpf}>
-              <a href="/">{user.name}</a>
-              <div>
-                <Button
-                  className="buttonEye"
-                  onClick={() => showUser(user)}
-                  type="submit"
-                >
-                  Ver +
-                </Button>
-                <Button type="submit" onClick={() => goToForm(user)}>
-                  <FiEdit size={20} />
-                </Button>
-                <Button type="submit" onClick={() => getId(user.id)}>
-                  <FiTrash2 size={20} />
-                </Button>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <Content>
+          <h2>Listagem de Usuários</h2>
+          <ul>
+            {allUsers?.map(user => (
+              <User>
+              <li key={user.cpf}>
+                <span>{user.name}</span>
+                <div>
+                  <button
+                    className="buttonEye"
+                    onClick={() => showUser(user)}
+                    type="submit"
+                  >
+                    <FiEye size={20} color="33D69F"/>
+                  </button>
+                  <button type="submit" onClick={() => goToForm(user)}>
+                    <FiEdit size={20} color="FFB800"/>
+                  </button>
+                  <button type="submit" onClick={() => getId(user.id)}>
+                    <FiTrash2 size={20} color="FF4C61"/>
+                  </button>
+                </div>
+              </li>
+              </User>
+            ))}
+          </ul>
+        </Content>
       </Container>
     </>
   );

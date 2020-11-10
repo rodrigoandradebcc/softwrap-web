@@ -9,10 +9,11 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #312E38;
+    background: #DFE1EB;
     color: #fff;
     -webkit-font-smoothing: antialiased;
   }
+
   ul {
     list-style: none;
     margin: 10px;
@@ -20,13 +21,11 @@ export default createGlobalStyle`
   }
 
   li {
-    background: #ffffff;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin: 8px 0;
     padding: 15px;
     display: grid;
-    grid-template-columns: 3fr 3fr 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
   }
 
   li > span:last-child {
@@ -34,7 +33,7 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font-family:  'Roboto Slab', serif !important;
+    font-family:  'Poppins', serif !important;
     font-size: 16px;
     h1, h2, h3, h4, h5,h6, strong{
       font-weight: 500;

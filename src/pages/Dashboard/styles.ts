@@ -2,63 +2,43 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.div`
-  height: calc(100vh - 60px);
-
   display: flex;
-  width: 90%;
-  max-width: 1120px;
-  flex-direction: column;
   align-items: center;
-  margin: 48px auto;
-  .buttonEye {
-    background: #ff9000;
-    padding: 6px 12px;
-    font-size: 12px;
-    border-radius: 4px;
-  }
-
-  ul {
-    width: 100%;
-
-    li {
-      border-radius: 8px;
-      background: #232129;
-      padding: 20px 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      @media (max-width: 420px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      a {
-        color: #f4ede8;
-        text-decoration: none;
-      }
-      div {
-        display: flex;
-        align-items: center;
-        @media (max-width: 420px) {
-          margin-top: 30px;
-        }
-      }
-    }
-  }
+  justify-content: center;
+  min-height: 100vh;
 `;
 
-export const Button = styled.button`
-  background: transparent;
-  border: 0;
-  & + button {
-    margin-left: 30px;
+export const Content = styled.div`
+  padding: 32px;
+  h2 {
+    color: #6F52ED;
+    margin-bottom: 16px;  
+    font-weight: 600;
+    text-align: center;
   }
+  width: 60%;
+  height: 50%;
+  background: white;
+  margin-left: 64px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.1);
+`;
 
-  svg {
-    color: #f4ede8;
-    transition: color 0.2s;
-    &:hover {
-      color: ${shade(0.2, '#f4ede8')};
-    }
+export const User = styled.div`
+  width: 720px;
+  span {
+    color: #373B53;
+  }
+  li {
+    align-items: center;
+  }
+  button {
+    margin-right: 32px;
+    background: none;
+    border: none;
   }
 `;
