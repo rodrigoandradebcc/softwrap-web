@@ -25,7 +25,7 @@ export const Content = styled.div`
   justify-content: center;
 
   form {
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-content: center;

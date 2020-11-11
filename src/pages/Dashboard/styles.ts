@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
 
 export const Container = styled.div`
   display: flex;
@@ -11,14 +10,14 @@ export const Container = styled.div`
 export const Content = styled.div`
   padding: 32px;
   h2 {
-    color: #6F52ED;
-    margin-bottom: 16px;  
-    font-weight: 600;
-    text-align: center;
+        color: #6F52ED;
+        margin-bottom: 16px;
+        font-weight: 600;
+        text-align: center;
   }
   width: 60%;
   height: 50%;
-  background: white;
+  background: #FFF;
   margin-left: 64px;
   border-radius: 8px;
   display: flex;
@@ -29,7 +28,7 @@ export const Content = styled.div`
 `;
 
 export const User = styled.div`
-  width: 720px;
+  max-width: 720px;
   span {
     color: #373B53;
   }
@@ -37,8 +36,13 @@ export const User = styled.div`
     align-items: center;
   }
   button {
-    margin-right: 32px;
+    margin-right: 16px;
     background: none;
     border: none;
   }
+  div {
+    display: flex;
+    margin-left: auto;
+  }
 `;
+ 

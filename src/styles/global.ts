@@ -25,7 +25,7 @@ export default createGlobalStyle`
     margin: 8px 0;
     padding: 15px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
   }
 
   li > span:last-child {
