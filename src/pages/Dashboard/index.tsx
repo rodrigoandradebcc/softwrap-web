@@ -60,7 +60,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-     {isModalConfirmation && (
+      {isModalConfirmation && (
         <ModalConfirmation
           title="Excluir usuário"
           visible={isModalConfirmation}
@@ -76,24 +76,24 @@ const Dashboard: React.FC = () => {
           <ul>
             {allUsers?.map(user => (
               <User>
-              <li key={user.cpf}>
-                <span>{user.name}</span>
-                <div>
-                  <button
-                    className="buttonEye"
-                    onClick={() => showUser(user)}
-                    type="submit"
-                  >
-                    <FiEye size={20} color="33D69F"/>
-                  </button>
-                  <button type="submit" onClick={() => goToForm(user)}>
-                    <FiEdit size={20} color="FFB800"/>
-                  </button>
-                  <button type="submit" onClick={() => getId(user.id)}>
-                    <FiTrash2 size={20} color="FF4C61"/>
-                  </button>
-                </div>
-              </li>
+                <li key={user.cpf}>
+                  <span>{user.name}</span>
+                  <div>
+                    <button
+                      className="buttonEye"
+                      onClick={() => showUser(user)}
+                      type="submit"
+                    >
+                      <FiEye size={20} color="33D69F" />
+                    </button>
+                    <button type="submit" onClick={() => goToForm(user)}>
+                      <FiEdit size={20} color="FFB800" />
+                    </button>
+                    <button type="submit" onClick={() => getId(user.id)}>
+                      <FiTrash2 size={20} color="FF4C61" />
+                    </button>
+                  </div>
+                </li>
               </User>
             ))}
           </ul>

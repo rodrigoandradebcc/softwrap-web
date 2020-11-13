@@ -25,9 +25,10 @@ const Input: React.FC<InputProps> = ({ name, icon: Icon, ...rest }) => {
     });
   }, [fieldName, registerField]);
   return (
-    <Container>
+    <Container isErrored={!!error}>
       {Icon && <Icon size={20} />}
       <input defaultValue={defaultValue} ref={inputRef} {...rest} />
+      {error}
     </Container>
   );
 };
