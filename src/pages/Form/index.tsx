@@ -12,7 +12,6 @@ import {
 import { Form as FormElement } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import { useHistory } from 'react-router-dom';
-import { mask, unMask } from 'remask';
 import api from '../../services/api';
 import { Container, Content } from './styles';
 import Button from '../../components/Button';

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   height: 100vh;
   width: 100vw;
-  background-color: (#fff, 0.5);
+  background-color: rgba(55, 59, 83, 0.2);
   z-index: 99999;
   position: fixed;
   top: 0;
@@ -14,11 +14,16 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   margin: 250px auto;
-  width: 500px;
-  background: #ff9000;
+  width: 30%;
+
+  @media (max-width: 900px) {
+    width: 50%;
+  }
+
+  background: #6f52ed;
   text-align: center;
   border-radius: 10px;
-  padding: 10px;
+  padding: 12px;
 
   h2 {
     font-size: 16px;

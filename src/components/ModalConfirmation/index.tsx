@@ -1,5 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
+import Button from '../Button';
 import { Container, Content } from './styles';
 
 export interface ModalProps
@@ -32,12 +33,12 @@ export function ModalConfirmation({
 
         <p>{textConfirm}</p>
         <footer className="footer">
-          <button className="confirm" onClick={confirm}>
+          <Button className="confirm" onClick={confirm}>
             Confirmar
-          </button>
-          <button className="close" onClick={closeModal}>
+          </Button>
+          <Button className="close" onClick={closeModal}>
             Cancelar
-          </button>
+          </Button>
         </footer>
       </Content>
     </Container>

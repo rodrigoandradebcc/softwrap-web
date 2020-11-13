@@ -1,10 +1,9 @@
-import styled, { css, keyframes } from 'styled-components';
-import { shade } from 'polished';
+import styled from 'styled-components';
 
 export const Container = styled.header`
   width: 64px;
   min-height: 100vh;
-  background-color: #373B53;
+  background-color: #373b53;
   nav {
     display: flex;
     justify-content: center;
@@ -12,7 +11,7 @@ export const Container = styled.header`
     align-items: center;
     a:hover {
       svg {
-        color: #6F52ED;
+        color: #6f52ed;
       }
     }
   }
@@ -25,17 +24,7 @@ interface IContentPros {
   menuVisible: boolean;
 }
 
-const apperToRight = keyframes`
-  from{
-    transform: translateX(-100%);
-    opacity: 0;
-  } to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-`;
-
-/*export const Content = styled.div<IContentPros>`
+/* export const Content = styled.div<IContentPros>`
   max-width: 1120px;
   width: 90%;
   display: flex;
@@ -90,4 +79,4 @@ const apperToRight = keyframes`
       display: none;
     }
   }
-`;*/
+`; */

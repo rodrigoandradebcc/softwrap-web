@@ -5,7 +5,6 @@ import api from '../../services/api';
 import { ModalConfirmation } from '../../components/ModalConfirmation';
 import { Container, Content, User } from './styles';
 import SideBar from '../../components/SideBar';
-import Button from '../../components/Button';
 
 interface IDataForm {
   id: string;

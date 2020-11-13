@@ -1,9 +1,4 @@
-import React, {
-  InputHTMLAttributes,
-  useCallback,
-  useEffect,
-  useRef,
-} from 'react';
+import React, { InputHTMLAttributes, useEffect, useRef } from 'react';
 import { useField } from '@unform/core';
 import { IconBaseProps } from 'react-icons';
 

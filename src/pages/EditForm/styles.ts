@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
 
 export const Container = styled.div`
   display: flex;
@@ -9,10 +8,10 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
- padding: 32px;
+  padding: 32px;
   h2 {
-    color: #6F52ED;
-    margin-bottom: 16px;  
+    color: #6f52ed;
+    margin-bottom: 16px;
     font-weight: 600;
     text-align: center;
   }
