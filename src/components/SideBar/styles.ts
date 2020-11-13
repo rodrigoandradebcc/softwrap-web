@@ -10,11 +10,9 @@ export const Container = styled.header`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    svg {
-      margin-top: 32px;
-
-      &:hover {
-        color: black;
+    a:hover {
+      svg {
+        color: #6F52ED;
       }
     }
   }

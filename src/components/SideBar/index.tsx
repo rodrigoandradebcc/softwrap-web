@@ -1,22 +1,37 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
 import { AiOutlineTeam, AiOutlineUserAdd } from 'react-icons/ai';
 
 import { Link } from 'react-router-dom';
+import IconSideBar from '../IconSideBar';
 
 import { Container } from './styles';
 
+
 const SideBar: React.FC = () => {
-  const [menuVisible, setMenuVisible] = useState(false);
-  const [active, setActive] = useState(false);
+
+  
+  const [iconTeamActive, setIconTeamActive] = useState(false);
+  const [iconUserAddActive, setIconUserAddActive] = useState(false);
+  
+  useEffect(() => {
+    if(window.location.toString().includes('/dashboard')) {
+      setIconTeamActive(true);
+    } else {
+      setIconUserAddActive(true);
+    }
+  }, []);
+
   return (
     <Container>
         <nav>
           <Link to="/dashboard">
-            <AiOutlineTeam size={30} color="#FFF" />
+            <IconSideBar icon={AiOutlineTeam}
+              isActive={iconTeamActive} />
           </Link>
           <Link to="/">
-            <AiOutlineUserAdd size={30} color="#FFF"/>
+            <IconSideBar icon={AiOutlineUserAdd}
+             isActive={iconUserAddActive} />
           </Link>
         </nav>
     </Container>
