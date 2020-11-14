@@ -61,6 +61,3 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 <img src="https://imgur.com/Hchab0J.png"/>
 
 <img src="https://imgur.com/4LJYzIr.png"/>
-
-
-Feito com ❤️ por Rodrigo Andrade 👋🏽 Entre em contato!
