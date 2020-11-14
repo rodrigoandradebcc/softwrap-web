@@ -10,18 +10,18 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ## 🎲  Rodando o Back End (servidor)
 ### Clone este repositório
-$ git clone https://github.com/rodrigoandradebcc/softwrap
+`git clone https://github.com/rodrigoandradebcc/softwrap`
 
 ### Acesse a pasta do projeto no terminal/cmd
-$cd softwrap
+`cd softwrap`
 
 ### Instale as dependências
-$ yarn
+`yarn`
 
 <b>Crie um banco de dados no Docker com o Nome: softwrap_database</b>
 
 ### Execute a aplicação em modo de desenvolvimento
-$ yarn dev:server
+`yarn dev:server`
 
 ### O servidor iniciará na porta 3333
 #### Acesse http://localhost:3333
@@ -29,16 +29,16 @@ $ yarn dev:server
 
 ## 🧭 Rodando a aplicação web (Front End)
 ### Clone este repositório
-$ git clone https://github.com/odrigoandradebcc/softwrap-web
+`git clone https://github.com/odrigoandradebcc/softwrap-web`
 
 ### Acesse a pasta do projeto no seu terminal/cmd
-$ cd softwrap-web
+`cd softwrap-web`
 
 ### Instale as dependências
-$ yarn
+`yarn`
 
 ### Execute a aplicação em modo de desenvolvimento
-$ yarn start
+`yarn start`
 
 ### A aplicação será aberta na porta 3000
 #### Acesse http://localhost:3000
@@ -48,14 +48,14 @@ $ yarn start
 <p>Adição do modal de exclusão</p>
 <p>Validação de campos e máscaras de input</p>
 
-#### Layout antes de ser alterado:
+### Layout antes de ser alterado:
 ![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print2.png)
 
 ![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print3.png)
 
 ![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print4.png)
 
-#### Layout após ser alterado:
+### Layout após ser alterado:
 <img src="https://imgur.com/8ZIGVNS.png"/> 
 
 <img src="https://imgur.com/Hchab0J.png"/>
