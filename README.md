@@ -13,7 +13,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 $ git clone https://github.com/rodrigoandradebcc/softwrap
 
 ### Acesse a pasta do projeto no terminal/cmd
-$ cd softwrap
+$cd softwrap
 
 ### Instale as dependências
 $ yarn
