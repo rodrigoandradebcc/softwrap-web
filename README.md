@@ -8,7 +8,7 @@ Front End (pasta web)
 Pré-requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: Git, Node.js. Além disto é bom ter um editor para trabalhar com o código como VSCode
 
-## 🎲 Rodando o Back End (servidor)
+## 🎲  Rodando o Back End (servidor)
 ### Clone este repositório
 $ git clone https://github.com/rodrigoandradebcc/softwrap
 
@@ -23,7 +23,7 @@ $ yarn
 ### Execute a aplicação em modo de desenvolvimento
 $ yarn dev:server
 
-### O servidor iniciará na porta:3333
+### O servidor iniciará na porta 3333
 #### Acesse http://localhost:3333
 
 
@@ -56,11 +56,11 @@ $ yarn start
 ![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print4.png)
 
 #### Layout após ser alterado:
-![alt](https://imgur.com/8ZIGVNS) 
+<img src="https://imgur.com/8ZIGVNS"/> 
 
-![alt](https://imgur.com/Hchab0J) 
+<img src="https://imgur.com/Hchab0J"/>
 
-![alt](https://imgur.com/4LJYzIr) 
+<img src="https://imgur.com/4LJYzIr"/>
 
 
 Feito com ❤️ por Rodrigo Andrade 👋🏽 Entre em contato!
