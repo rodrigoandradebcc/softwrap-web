@@ -40,14 +40,27 @@ $ yarn
 ### Execute a aplicação em modo de desenvolvimento
 $ yarn start
 
-### A aplicação será aberta na porta:3000
+### A aplicação será aberta na porta 3000
 #### Acesse http://localhost:3000
 
+#### Funcionalidades alteradas/adicionadas
+<p>Layout</p>
+<p>Adição do modal de exclusão</p>
+<p>Validação de campos e máscaras de input</p>
+
+#### Layout antes de ser alterado:
 ![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print2.png)
 
 ![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print3.png)
 
 ![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print4.png)
+
+#### Layout após ser alterado:
+![alt](https://imgur.com/8ZIGVNS) 
+
+![alt](https://imgur.com/Hchab0J) 
+
+![alt](https://imgur.com/4LJYzIr) 
 
 
 Feito com ❤️ por Rodrigo Andrade 👋🏽 Entre em contato!
