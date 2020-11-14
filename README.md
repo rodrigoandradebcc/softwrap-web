@@ -56,11 +56,11 @@ $ yarn start
 ![alt](https://github.com/rodrigoandradebcc/softwrap-web/blob/master/github/print4.png)
 
 #### Layout após ser alterado:
-<img src="https://imgur.com/8ZIGVNS"/> 
+<img src="https://imgur.com/8ZIGVNS.png"/> 
 
-<img src="https://imgur.com/Hchab0J"/>
+<img src="https://imgur.com/Hchab0J.png"/>
 
-<img src="https://imgur.com/4LJYzIr"/>
+<img src="https://imgur.com/4LJYzIr.png"/>
 
 
 Feito com ❤️ por Rodrigo Andrade 👋🏽 Entre em contato!
